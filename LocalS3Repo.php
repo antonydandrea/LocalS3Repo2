@@ -41,16 +41,16 @@ $wgLocalFileRepo = array(
 	'AWS_S3_PUBLIC' => $wgPublicS3,
 	'AWS_S3_SSL' => $wgUploadS3SSL
 );
-require_once("$IP/extensions/LocalS3Repo/LocalS3Repo.php");
+require_once("$IP/extensions/LocalS3Repo2/LocalS3Repo.php");
 // s3 filesystem repo - end
  ***
  * @ingroup FileRepo
  */
  
 if (!class_exists('S3')) require_once 'S3.php';
-require_once("$IP/extensions/LocalS3Repo/FSs3Repo.php");
-require_once("$IP/extensions/LocalS3Repo/LocalS3File.php");
-require_once("$IP/extensions/LocalS3Repo/OldLocalS3File.php");
+require_once("$IP/extensions/LocalS3Repo2/FSs3Repo.php");
+require_once("$IP/extensions/LocalS3Repo2/LocalS3File.php");
+require_once("$IP/extensions/LocalS3Repo2/OldLocalS3File.php");
 
  // Instantiate the class
 $s3 = new S3();
