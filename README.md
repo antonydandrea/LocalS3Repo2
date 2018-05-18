@@ -44,7 +44,7 @@ $wgLocalFileRepo = array(
         'AWS_S3_SSL' => $wgUploadS3SSL,
         'cloudFrontUrl' => $wgCloudFrontUrl,
 );
-require_once("$IP/extensions/LocalS3Repo/LocalS3Repo.php");
+require_once("$IP/extensions/LocalS3Repo2/LocalS3Repo.php");
 ```
 
 ```php
@@ -89,6 +89,6 @@ $wgLocalFileRepo = array(
         'AWS_S3_SSL' => $wgUploadS3SSL,
         'cloudFrontUrl' => $wgCloudFrontUrl,
 );
-require_once("$IP/extensions/LocalS3Repo/LocalS3Repo.php");
+require_once("$IP/extensions/LocalS3Repo2/LocalS3Repo.php");
 // s3 filesystem repo settings - end
 ```
